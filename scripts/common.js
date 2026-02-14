@@ -10,5 +10,5 @@ function isLocalhostOrHttp() {
 
 function getHost() {
     // const local = `${window.location.host}//${window.location.host}`
-    return isLocalhostOrHttp() ? `http://localhost:12000` : `https://example.com`;
+    return isLocalhostOrHttp() ? `http://localhost:12000` : `https://gouravgupta.ai`;
 }

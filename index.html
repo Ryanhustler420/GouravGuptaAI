@@ -5,30 +5,194 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Title - Your Punch Line</title>
+  <title>Gourav Gupta | AI Architect</title>
   <link rel="icon" type="image/png" href="/favicon.png">
-  <meta name="keywords" content="Something, Working">
-  <meta name="description" content="Join hands with us bla bla bla">
+  <meta name="keywords" content="Tech Lead Publicis Groupe">
+  <meta name="description" content="Tech Lead at Publicis Group, Solution Architect, Software Engineer, Learning New Skills Everyday">
   <link rel="icon" type="image/x-icon" href="https://placehold.co/35">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-  <meta property="og:title" content="Title">
-  <meta property="og:description" content="Join hands with us bla bla bla">
+  <meta property="og:title" content="Gourav Gupta | AI Architect">
+  <meta property="og:description" content="Tech Lead at Publicis Group, Solution Architect, Software Engineer, Learning New Skills Everyday">
   <meta property="og:image" content="/favico.png">
 
   <meta name="twitter:card" content="/favico.gif">
 
-  <link rel="canonical" href="https://www.title.com">
+  <style>
+    :root {
+      --primary: #8b5cf6;
+      --secondary: #00f5ff;
+    }
 
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="./public/output.css"></script>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      overflow: hidden;
+      background: #050510;
+    }
+
+    /* 🔥 Glowing Background */
+    .background {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: -1;
+    }
+
+    .blob {
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, var(--primary), transparent 70%);
+      filter: blur(120px);
+      animation: move 18s infinite alternate ease-in-out;
+      opacity: 0.7;
+    }
+
+    .blob:nth-child(2) {
+      background: radial-gradient(circle, var(--secondary), transparent 70%);
+      top: 50%;
+      left: 60%;
+      animation-duration: 22s;
+    }
+
+    @keyframes move {
+      0% { transform: translate(-20%, -20%) scale(1); }
+      50% { transform: translate(20%, 10%) scale(1.2); }
+      100% { transform: translate(-10%, 20%) scale(1); }
+    }
+
+    /* Content */
+    .container {
+      max-width: 700px;
+      padding: 20px;
+      animation: fadeIn 1.5s ease;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 8vw, 3.5rem);
+      font-weight: 700;
+      background: linear-gradient(90deg, #ffffff, var(--primary));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .subtitle {
+      margin-top: 12px;
+      font-size: clamp(1rem, 4vw, 1.3rem);
+      color: #cccccc;
+    }
+
+    .description {
+      margin-top: 25px;
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #dddddd;
+    }
+
+    /* Buttons */
+    .buttons {
+      margin-top: 35px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .btn {
+      text-decoration: none;
+      padding: 14px 20px;
+      border-radius: 40px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: white;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 0 25px var(--primary);
+    }
+
+    .btn-outline {
+      border: 1px solid var(--secondary);
+      color: var(--secondary);
+    }
+
+    .btn-outline:hover {
+      background: var(--secondary);
+      color: black;
+    }
+
+    /* Desktop */
+    @media(min-width: 768px) {
+      .buttons {
+        flex-direction: row;
+        justify-content: center;
+      }
+      .btn {
+        padding: 14px 30px;
+      }
+    }
+
+    .footer {
+      margin-top: 60px;
+      font-size: 0.8rem;
+      color: #777;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+
+  <link rel="canonical" href="https://www.gouravgupta.ai">
+
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <!-- <script src="./public/output.css"></script> -->
 </head>
 
 <body>
-  <h1 class="text-4xl font-bold text-blue-600">Hello, Welcome to netlify template</h1>
-  <p class="mt-4 text-gray-700">You're developing with basic boilerplate</p>
 
+  <div class="background">
+    <div class="blob"></div>
+    <div class="blob"></div>
+  </div>
 
-  
+  <div class="container">
+    <h1>Gourav Gupta</h1>
+    <div class="subtitle">AI Architect • Builder • Educator</div>
+
+    <p class="description">
+      Designing intelligent systems, scalable platforms, and AI-powered experiences 
+      for the future of technology.
+    </p>
+
+    <div class="buttons">
+      <a href="mailto:youremail@example.com" class="btn btn-primary">Contact Me</a>
+      <a href="https://gouravgupta.com" class="btn btn-outline">Visit Main Site</a>
+    </div>
+
+    <div class="footer">
+      © 2026 Gourav Gupta. All rights reserved.
+    </div>
+  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script src="./scripts/common.js"></script>
   <script src="./scripts/routes.js"></script>

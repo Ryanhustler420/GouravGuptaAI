@@ -1,4 +1,4 @@
 ### Deploy Netlify
 
-- WF_NETLIFY_SITE_ID: xxxx-xxx-xxx-xxxx-xxxxxxx
-- WF_NETLIFY_AUTH_TOKEN: nfp_xxx
+- WF_NETLIFY_SITE_ID: 584d11cd-f4ad-4f84-9fff-663f45a5f4cc
+- WF_NETLIFY_AUTH_TOKEN: nfp_9RZ8LYf4M2NLWrdMJt1EcndsmGtsjf9C8227
